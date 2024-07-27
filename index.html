@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html >
+<head>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Student Record Manager</h1>
+        <div class="form-container">
+            <div class="form">
+                <h2>Add Student</h2>
+                <label for="name">Student Name:</label>
+                <input type="text" id="name" placeholder="Enter student name">
+                <label for="age">Student Age:</label>
+                <input type="number" id="age" placeholder="Enter student age">
+                <label for="type">Student Type:</label>
+                <select id="type">
+                    <option value="Regular">Regular</option>
+                    <option value="Special">Special</option>
+                </select>
+                <button onclick="addStudent()">Add Student</button>
+            </div>
+            <div class="student-list">
+                <h2>Student List</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Student Name</th>
+                            <th>Student Age</th>
+                            <th>Type</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="student-table-body">
+                        <!-- Student rows will be added here dynamically -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+<script src="scripts.js">
+</script>
+</body>
+</html>
